@@ -1,7 +1,6 @@
 # Multimodal-Data-Scraping
 Text data scraping from multimodal data sources
 
-```markdown
 # Web Scraping and Processing Tool
 
 This tool provides functionalities for web scraping and processing different types of content. You can perform static web scraping, dynamic web scraping, YouTube ASR (Automatic Speech Recognition), and YouTube transcript extraction.
