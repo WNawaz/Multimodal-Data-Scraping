@@ -34,7 +34,7 @@ To perform dynamic web scraping:
 ```
 python script.py --action dynamic --base_url http://example.com --episode 1 --total_pages 10 --outfile output_file.txt --driver_path /path/to/chromedriver
 --base_url: The base URL of the website to scrape.
---episode: Episode number to scrape.
+--episode: Episode name to scrape.
 --total_pages: Total number of pages to scrape.
 --outfile: Path to save the scraped data.
 --driver_path: Path to the ChromeDriver.
