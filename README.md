@@ -10,8 +10,10 @@ This Python script provides a command-line tool for performing various web scrap
 - **YouTube Transcripts**: Extract transcripts from YouTube playlists.
 
 **Install Dependencies**: Install any necessary Python libraries by running:
-   ```bash
+   ```
    pip install -r requirements.txt
+   ```
+
 ### Usage
 
 You can use this tool from the command line with various options depending on the action you want to perform. Here’s how to use each action:
