@@ -9,15 +9,53 @@ This Python script provides a command-line tool for performing various web scrap
 - **YouTube ASR**: Extract automated speech recognition (ASR) data from YouTube videos.
 - **YouTube Transcripts**: Extract transcripts from YouTube playlists.
 
-## Getting Started
-
-### Requirements
-
-1. **Python 3.x**: Ensure you have Python 3 installed.
-2. **ChromeDriver**: For dynamic web scraping, make sure you have the ChromeDriver installed and accessible. The default path is set to `/usr/lib/chromium-browser/chromedriver`.
-
-### Installation
-
-1. **Install Dependencies**: Install any necessary Python libraries by running:
+**Install Dependencies**: Install any necessary Python libraries by running:
    ```bash
    pip install -r requirements.txt
+### Usage
+
+You can use this tool from the command line with various options depending on the action you want to perform. Here’s how to use each action:
+
+#### 1. Static Web Scraping
+
+To perform static web scraping:
+
+```bash
+python script.py --action static --outfile output_file.txt --base_url http://example.com --list_content content_list.txt
+--outfile: Path to save the scraped data.
+--base_url: The base URL of the website to scrape.
+--list_content: A list of content to scrape.
+2. Dynamic Web Scraping
+To perform dynamic web scraping:
+
+bash
+Copy code
+python script.py --action dynamic --base_url http://example.com --episode 1 --total_pages 10 --outfile output_file.txt --driver_path /path/to/chromedriver
+--base_url: The base URL of the website to scrape.
+--episode: Episode number to scrape.
+--total_pages: Total number of pages to scrape.
+--outfile: Path to save the scraped data.
+--driver_path: Path to the ChromeDriver.
+3. YouTube ASR
+To extract ASR data from YouTube:
+
+bash
+python script.py --action asr --channel my_channel --outfile output_file.txt --missed_reader path/to/missed_reader
+--channel: YouTube channel name.
+--outfile: Path to save the ASR data.
+--missed_reader: Path to the missed reader file.
+4. YouTube Transcripts
+To extract transcripts from YouTube playlists:
+
+bash
+Copy code
+python script.py --action transcripts --playlists playlist1,playlist2 --channel my_channel --outfile output_file.txt --missed_reader path/to/missed_reader
+--playlists: Comma-separated list of YouTube playlists.
+--channel: YouTube channel name.
+--outfile: Path to save the transcripts.
+--missed_reader: Path to the missed reader file.
+Notes
+Ensure that you provide all required arguments for the selected action. The script will prompt you if any required arguments are missing.
+Modify driver_path in the dynamic web scraping options if your ChromeDriver is located elsewhere.
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
