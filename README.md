@@ -23,7 +23,7 @@ You can use this tool from the command line with various options depending on th
 To perform static web scraping:
 
 ```
-python script.py --action static --outfile output_file.txt --base_url http://example.com --list_content content_list.txt
+python scraping.py --action static --outfile output_file.txt --base_url http://example.com --list_content content_list.txt
 --outfile: Path to save the scraped data.
 --base_url: The base URL of the website to scrape.
 --list_content: A list of content to scrape.
@@ -32,7 +32,7 @@ python script.py --action static --outfile output_file.txt --base_url http://exa
 To perform dynamic web scraping:
 
 ```
-python script.py --action dynamic --base_url http://example.com --episode 1 --total_pages 10 --outfile output_file.txt --driver_path /path/to/chromedriver
+python scraping.py --action dynamic --base_url http://example.com --episode 1 --total_pages 10 --outfile output_file.txt --driver_path /path/to/chromedriver
 --base_url: The base URL of the website to scrape.
 --episode: Episode name to scrape.
 --total_pages: Total number of pages to scrape.
@@ -42,7 +42,7 @@ python script.py --action dynamic --base_url http://example.com --episode 1 --to
 #### 3. YouTube ASR
 To extract ASR data from YouTube:
 ```
-python script.py --action asr --channel my_channel --outfile output_file.txt --missed_reader path/to/missed_reader
+python scraping.py --action asr --channel my_channel --outfile output_file.txt --missed_reader path/to/missed_reader
 --channel: YouTube channel name.
 --outfile: Path to save the ASR data.
 --missed_reader: Path to the missed reader file.
@@ -52,7 +52,7 @@ python script.py --action asr --channel my_channel --outfile output_file.txt --m
 To extract transcripts from YouTube playlists:
 
 ```
-python script.py --action transcripts --playlists playlist1,playlist2 --channel my_channel --outfile output_file.txt --missed_reader path/to/missed_reader
+python scraping.py --action transcripts --playlists playlist1,playlist2 --channel my_channel --outfile output_file.txt --missed_reader path/to/missed_reader
 --playlists: Comma-separated list of YouTube playlists.
 --channel: YouTube channel name.
 --outfile: Path to save the transcripts.
