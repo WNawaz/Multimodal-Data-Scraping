@@ -23,10 +23,10 @@ You can use this tool from the command line with various options depending on th
 To perform static web scraping:
 
 ```
-python scraping.py --action static --outfile output_file.txt --base_url http://example.com --list_content content_list.txt
+python scraping.py --action static --outfile output_file --base_url https://binbaz.org.sa/ --list_content fatwas --total_pages 1
 --outfile: Path to save the scraped data.
 --base_url: The base URL of the website to scrape.
---list_content: A list of content to scrape.
+--list_content: content to scrape.
 ```
 #### 2. Dynamic Web Scraping
 To perform dynamic web scraping:
@@ -52,7 +52,7 @@ python scraping.py --action asr --channel my_channel --outfile output_file.txt -
 To extract transcripts from YouTube playlists:
 
 ```
-python scraping.py --action transcripts --playlists playlist1,playlist2 --channel my_channel --outfile output_file.txt --missed_reader path/to/missed_reader
+#python scraping.py --action transcripts --playlists https://www.youtube.com/playlist?list=PLgaTRTylCbZDP43U58PFXNflz-8zzUwvJ --channel twjdm --outfile out_file --missed_reader missed_vids
 --playlists: Comma-separated list of YouTube playlists.
 --channel: YouTube channel name.
 --outfile: Path to save the transcripts.
