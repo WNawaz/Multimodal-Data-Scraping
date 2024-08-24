@@ -3,16 +3,11 @@ SpeechRecognition
 pytube
 selenium
 chromedriver-autoinstaller
-pytube
 youtube-transcript-api
 pandas
 numpy
-csv
-time
 bs4
 requests
-re
 sqlite3
-os
 moviepy
 wave
